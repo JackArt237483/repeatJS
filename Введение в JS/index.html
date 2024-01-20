@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repeat JS</title>
+</head>
+<body style="background-color: blueviolet; text-align: center;">
+  <h2>Repeact JS</h2>
+  <h3>Измени текст</h3>
+
+  <p id="try">Поменяй меня</p>
+
+  <button type="button" onclick='document.getElementById("try").innerHTML = "Поменял"'>
+     Click me
+  </button>
+
+  <button type="button" onclick='
+ // здесь он менятет сам его шрифт
+  document.getElementById("try").style.fontSize = "35px"'>
+    Click me
+ </button>
+
+ <button type="button" onclick='
+ // здесь убирается элемент
+ document.getElementById("try").style.display = "none"'>
+  Click me
+</button>
+
+<button type="button" onclick='
+// здесь он менятет сам его добовляет
+document.getElementById("try").style.display = "block"'>
+  Click me
+</button>
+
+</body>
+  <script src="app.js">
+    // Метод InnerHtml изменяет содержимое самого элемента
+    // Метод Style изменяет сами элементы в Js элементах
+  </script>
+</html>
